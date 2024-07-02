@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Epilogue", sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    margin-top: 15px;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+}
+
+.hidden-icon {
+    display: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+}
+
+.icon-close {
+    display: none;
+}
+
+.flex-ul {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.features {
+    cursor: pointer;
+    margin-right: 30px;
+    width: 80px;
+
+}
+
+.arrow-i {
+    transform: rotate(0deg);
+}
+
+.features p {
+    color: hsl(0, 0%, 41%);
+
+}
+
+.features-ul {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 4px hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    display: none;
+    font-size: 14px;
+    line-height: 25px;
+    list-style: none;
+    margin: 13px 0;
+    padding: 15px;
+    width: 130px;
+    position: relative;
+    right: 50px;
+}
+
+.features-ul img {
+    margin: 0 8px;
+    width: 13%;
+}
+
+.company {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.arrow-ii {
+    transform: rotate(0deg);
+}
+
+.company p {
+    color: hsl(0, 0%, 41%);
+}
+
+.company-ul {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 4px hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    display: none;
+    font-size: 14px;
+    line-height: 25px;
+    list-style: none;
+    margin: 13px 0;
+    padding: 15px;
+}
+
+.career {
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.about {
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+}
+
+.registration {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 5vh;
+}
+
+.registration p {
+    color: hsl(0, 0%, 41%);
+    margin: 0 20px;
+}
+
+.registration button {
+    background-color: inherit;
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 8px;
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    height: 5vh;
+    padding: 0 10px;
+}
+
+section {
+    align-items: end;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 25px;
+    left: 80px;
+    margin: 0 auto;
+}
+
+.main-container {
+    margin: 0 80px;
+}
+
+.main-container h2 {
+    font-size: 75px;
+}
+
+.main-container span {
+    display: block;
+    margin-top: -10px;
+}
+
+.main-container p {
+    color: hsl(0, 0%, 41%);
+    font-size: 17px;
+    margin: 35px 0;
+    width: 350px;
+}
+
+.main-container button {
+    color: white;
+    background-color: hsl(0, 0%, 8%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 12px 20px;
+}
+
+.flex-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.flex-images img {
+    height: 3.5vh;
+    width: 20%;
+}
+
+.hidden-mobile {
+    display: none;
+}
+
+.image-container img {
+    height: 530px;
+    width: 450px;
+}
+
+.image-container {
+    margin: 0 80px;
+}
+
+/* PSUEDO CLASSES */
+
+.features p:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 550;
+}
+
+.company p:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 550;
+}
+
+.career:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 550;
+}
+
+.about:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 550;
+}
+
+.registration p:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 550;
+}
+
+.registration button:hover {
+    border: 2px solid black;
+    color: hsl(0, 0%, 8%);
+    font-weight: 550;
+}
+
+.main-container button:hover {
+    color: hsl(0, 0%, 8%);
+    background-color: inherit;
+    border: 2px solid black;
+    font-weight: 550;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 375px) {
+
+    header {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .flex-header {
+        display: block;
+    }
+
+    .hidden-icon {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* .opacity {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: block;
+        height: 100vh;
+        position: relative;
+      
+    } */
+
+    .icon-close {
+        display: flex;
+        float: right;
+        width: 15%;
+    }
+
+    .nav-container {
+        background-color: hsl(0, 0%, 100%);
+        display: none;
+        flex-direction: column;
+        line-height: 2em;
+        height: 100%;
+        margin: 0 auto;
+        padding: 10px 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 65%;
+        z-index: 100;
+    }
+
+    .features-ul {
+        box-shadow: none;
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 0 15px;
+        position: unset;
+    }
+
+    .company-ul {
+        box-shadow: none;
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 0 15px;
+    }
+
+    .flex-ul {
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .registration {
+        display: block;
+        text-align: center;
+    }
+
+    .registration button {
+        width: 100%;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .hidden-mobile {
+        display: block;
+    }
+
+    section {
+        flex-direction: column-reverse;
+        position: unset;
+        margin: 15px 0;
+    }
+
+    .image-container img {
+        height: 200px;
+        mix-blend-mode: multiply;
+        width: 310px;
+    }
+
+    .image-container {
+        margin: 0 auto;
+    }
+
+    .main-container {
+        margin: 25px auto;
+        text-align: center;
+    }
+
+    .main-container h2 {
+        font-size: 37px;
+    }
+
+    .main-container span {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .main-container p {
+        line-height: 22px;
+        letter-spacing: 0.3px;
+        margin: 15px auto;
+        width: 300px;
+    }
+
+    .main-container button {
+        margin-top: 15px;
+        padding: 12px 20px;
+    }
+
+    .flex-images {
+        margin-top: 50px;
+        width: 340px;
+    }
+
+    .flex-images img {
+        height: 3vh;
+        width: 20%;
+    }
+
+
+
+
+
+
+
+}
